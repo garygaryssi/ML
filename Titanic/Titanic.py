@@ -51,7 +51,7 @@ plt.show()
 seaborn.countplot(data=df_train, x="Pclass", hue="Survived")
 plt.show()
 
-# seaborn - darkgird
+# seaborn - darkgird dfdfdf
 df_train["Pclass"] = df_train["Pclass"].replace(1, "1st").replace(2, "Business").replace(3, "Economy")
 df_train["Survived"] = df_train["Survived"].replace(1, "Alive").replace(0, "Dead")
 
