@@ -80,7 +80,7 @@ df_train["Embarked"] = df_train["Embarked"].map({"Q" : 0, "C" : 1, "S" : 2})
 
 # 모델 생성
 
-csf = RandomForestClassifier()
+csf = DecisionTreeClassifier()
 csf.fit(df_train, gt_train)
 
 df_test = pd.read_csv("test.csv")
